@@ -3,7 +3,21 @@
 $serveur = "localhost"; /* Connexion à la base de donnée */
 $login = "root";
 $pass = "root";
-
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
+/* Connexion à la base de donnée */
 try{
   $nom = "";
   $prenom = "";
