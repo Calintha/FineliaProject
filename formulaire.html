@@ -1,22 +1,23 @@
 <html>
 <head>
-	<title>Formulaire</title>
+	<title>Formulaire de note</title>
 	<p>
-Veuillez saisir vos notes avec leur coefficient :
+		Bienvenue dans le formulaire d'envoie des notes.
 	</p>
 </head>
 <body>
 	<form action="envoie.php" method="POST">
 	<p>
-		<label for="nom">Nom :</label>
+		<label for="nom">Votre nom s'il vous plait:</label>
+		<br/><br/>
 		<input type="text" name="nom" required/> <br/>
 		<br/><br/>
-
+		Veuillez saisir vos notes avec leur coefficient: <br/><br/>
 		<table>
 		  <tr>
-		    <td>Matiere</td>
-		    <td>Note</td>
-		    <td>Coeff</td>
+		    <td><B><U>Matiere</U></B></td>
+		    <td><B><U>Note</U></B></td>
+		    <td><B><U>Coeff</U></B></td>
 		  <tr>
 		  <tr>
 		    <td>Mathematique</td>
@@ -41,7 +42,9 @@ Veuillez saisir vos notes avec leur coefficient :
 		</table>
 		<br/><br/>
 
-		<input type="submit" value="valider"/>
+		<input type="submit" value="Transferer mes notes."/>
+		<br/><br/>
+		<a href="moyenne.php" target="_blank"> <input type="button" value="Voir les moyennes."> </a>
 	</p>
 	</form>
 </body>

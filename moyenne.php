@@ -30,4 +30,7 @@
     catch(PDOException $e){ /* message d'erreur si la connexion échoue */
       echo 'Echec de la connexion : '.$e->getMessage();
     }
+
+		/* Lien pour revenir au formulaire */
+		echo '<a href="formulaire.html"> Revenir au formulaire. </a>';
 ?>
