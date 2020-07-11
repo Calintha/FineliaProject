@@ -12,16 +12,16 @@
 		$connexion = new PDO("mysql:host=$serveur;dbname=moyenne", $login, $pass);
 		$connexion -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		/* Requete de calcul de moyenne */
+		/* Requete de calcul de moyenne et affichage des moyennes arrondi a 2 dixieme*/
 		$requete = $connexion->prepare("
-			SELECT nom, SUM(note)/SUM(coef) AS moyenne
+			SELECT nom, ROUND(SUM(note)/SUM(coef),2) AS moyenne
 			FROM eleve, notation, matiere
 			WHERE id_eleve = ref_note
 			AND id_eleve = ref_matiere
 			GROUP BY nom");
 		$requete->execute();
 
-		/* Affichage par liste des moyennes par nom d'eleve */
+		/* Affichage liste des moyennes par nom d'eleve */
 		$resultat = $requete->fetchall();
 		echo '<pre>';
 		print_r($resultat);
