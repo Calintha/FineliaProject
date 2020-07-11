@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Formulaire</title>
+	<p>
+Veuillez saisir vos notes avec leur coefficient :
+	</p>
+</head>
+<body>
+	<form action="envoie.php" method="POST">
+	<p>
+		<label for="nom">Nom :</label>
+		<input type="text" name="nom" required/> <br/>
+		<br/><br/>
+
+		<table>
+		  <tr>
+		    <td>Matiere</td>
+		    <td>Note</td>
+		    <td>Coeff</td>
+		  <tr>
+		  <tr>
+		    <td>Mathematique</td>
+		    <td><input type="text" name="note_math" required/></td>
+		    <td><input type="text" name="coeff_math" required/></td>
+		  <tr>
+		    <tr>
+		      <td>Anglais</td>
+		      <td><input type="text" name="note_anglais" required/></td>
+		      <td><input type="text" name="coeff_anglais" required/></td>
+		    <tr>
+		    <tr>
+		      <td>Francais</td>
+		      <td><input type="text" name="note_francais" required/></td>
+		      <td><input type="text" name="coeff_francais" required/></td>
+		    <tr>
+		    <tr>
+		      <td>Histoire</td>
+		      <td><input type="text" name="note_histoire" required/></td>
+		      <td><input type="text" name="coeff_histoire" required/></td>
+		    <tr>
+		</table>
+		<br/><br/>
+
+		<input type="submit" value="valider"/>
+	</p>
+	</form>
+</body>
+</html>
